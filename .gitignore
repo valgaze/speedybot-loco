@@ -1,0 +1,7 @@
+node_modules
+.DS_STORE
+deploy/
+dist/
+run.sh
+.env
+coverage
