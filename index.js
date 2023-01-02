@@ -15,6 +15,11 @@ const argv = yargs
     type: "string",
     description: "Path or URL of the file to be executed",
   })
+  .option("secrets", {
+    alias: "s",
+    type: "array",
+    description: "List of key=value pairs that will be exposed to the agent",
+  })
   .option("token", {
     alias: "t",
     type: "string",
@@ -22,7 +27,7 @@ const argv = yargs
     demandOption: true,
   }).argv;
 
-async function main(filePathOrUrl, token) {
+async function main(filePathOrUrl, token, secrets = {}) {
   // Check if the filePathOrUrl is a URL
   const isUrl =
     filePathOrUrl.startsWith("http://") || filePathOrUrl.startsWith("https://");
@@ -95,9 +100,10 @@ async function main(filePathOrUrl, token) {
 
   async function launchSockets(token, bot) {
     // Load the speedybot library
-    const speedybot = require("speedybot-mini");
+    // const speedybot = require("speedybot-mini");
 
     MyBot.setToken(token);
+    MyBot.addSecret(secrets);
     const inst = new Websocket(token);
     await inst.start();
     console.log(logoRoll());
@@ -125,6 +131,17 @@ async function main(filePathOrUrl, token) {
 // Get the file path or URL from the command line argument
 const filePathOrUrl = argv.file;
 const token = argv.token;
+let secrets = argv.secrets || [];
+
+const stash = {};
+secrets.forEach((secret) => {
+  const [k, v] = secret.split("=");
+  if (k && v) {
+    stash[k] = v;
+  }
+});
 
 // launch websockets
-main(filePathOrUrl, token);
+main(filePathOrUrl, token, stash);
+
+// speedycli -f my-cli/samples/openai.ts -t YmQ5ODg3YjQtYjhhMi00ZDMyLTgzZWQtMTJlYjg1MTQ5NDY5M2I5Y2Q3ZjUtZmIz_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f -s openai=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
