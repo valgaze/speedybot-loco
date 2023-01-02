@@ -1,6 +1,6 @@
 {
   "name": "speedybot-loco",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.3",
   "main": "index.js",
   "scripts": {
     "stamp:beta": "npm version 1.0.0-beta.0",
