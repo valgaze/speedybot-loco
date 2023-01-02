@@ -4,14 +4,16 @@
   "main": "index.js",
   "scripts": {
     "stamp:beta": "npm version 1.0.0-beta.0",
-    "publish:beta": "npm publish --tag beta"
+    "publish:beta": "npm publish --tag beta",
+    "pb": "npm run publish:beta"
   },
   "dependencies": {
     "@babel/runtime-corejs2": "^7.20.7",
+    "cross-fetch": "^3.1.5",
     "speedybot-mini": "^2.0.5",
     "typescript": "^4.9.4",
     "webex": "^2.35.3",
-    "cross-fetch": "^3.1.5"
+    "yargs": "^17.6.2"
   },
   "bin": {
     "speedycli": "index.js"
