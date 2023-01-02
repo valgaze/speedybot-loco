@@ -1,5 +1,3 @@
-const path = require("path");
-// Expects .env to get token on BOT_TOKEN
 const { init } = require("webex");
 // Trick to resolve "excessive device registrations" issue
 const resetDevices = async (token) => {
@@ -30,10 +28,16 @@ module.exports.Websocket = class Websocket {
   on(eventName, handler) {
     this.listeners[eventName] = handler;
   }
-  async getSelf() {
-    const { id } = await this.webexRef.people.get("me");
+
+  async getSelf(full = false) {
+    const res = await this.webexRef.people.get("me");
+    if (full) {
+      return res;
+    }
+    const { id } = res;
     this.me = id;
   }
+
   async init() {
     const config = {
       credentials: {
