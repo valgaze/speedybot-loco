@@ -1,10 +1,11 @@
 {
   "name": "speedybot-loco",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0-beta.1",
   "main": "index.js",
   "scripts": {
     "stamp:beta": "npm version 1.0.0-beta.0",
-    "publish:beta": "npm publish --tag beta"
+    "publish:beta": "npm publish --tag beta",
+    "pb": "npm run publish:beta"
   },
   "dependencies": {
     "@babel/runtime-corejs2": "^7.20.7",
