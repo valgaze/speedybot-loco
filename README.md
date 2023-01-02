@@ -11,13 +11,13 @@ As of now, this is an experimental CLI tool-- use with goggles. Unstable and blo
 -f: filepath or URL (you can point to a Speedybot-mini bot on github and run locally with your token)
 
 ```sh
-npx -y speedybot-loco@1.0.0-beta.2 -f my-cli/samples/config.js -t aaa-bbb-ccc-ddd-eee-fff
+npx -y speedybot-loco@1.0.0-beta.4 -f my-cli/samples/config.js -t aaa-bbb-ccc-ddd-eee-fff
 ```
 
 ```sh
-npx -y speedybot-loco@1.0.0-beta.2 -f https://github.com/valgaze/speedybot-loco/blob/deploy/samples/config.ts -t aaa-bbb-ccc-ddd-eee-fff
+npx -y speedybot-loco@1.0.0-beta.4 -f https://github.com/valgaze/speedybot-loco/blob/deploy/samples/config.ts -t aaa-bbb-ccc-ddd-eee-fff
 ```
 
 ```sh
-npx -y speedybot-loco@1.0.0-beta.2 -f https://raw.githubusercontent.com/valgaze/speedybot-loco/deploy/samples/config.ts -t aaa-bbb-ccc-ddd-eee-fff
+npx -y speedybot-loco@1.0.0-beta.4 -f https://raw.githubusercontent.com/valgaze/speedybot-loco/deploy/samples/config.ts -t aaa-bbb-ccc-ddd-eee-fff
 ```
