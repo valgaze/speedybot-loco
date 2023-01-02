@@ -25,23 +25,23 @@ You can use **[npx](https://www.npmjs.com/package/npx)** or if you're feeling ad
 ### Boot an agent from file path
 
 ```sh
-npx -y speedybot-loco@1.0.0-beta.5 -f my-cli/samples/config.js -t aaa-bbb-ccc-ddd-eee-fff
+npx -y speedybot-loco@1.0.0-beta.6 -f my-cli/samples/config.js -t aaa-bbb-ccc-ddd-eee-fff
 ```
 
 ### Boot an agent from public & "raw" github URLs
 
 ```sh
-npx -y speedybot-loco@1.0.0-beta.5 -f https://github.com/valgaze/speedybot-loco/blob/deploy/samples/config.ts -t aaa-bbb-ccc-ddd-eee-fff
+npx -y speedybot-loco@1.0.0-beta.6 -f https://github.com/valgaze/speedybot-loco/blob/deploy/samples/config.ts -t aaa-bbb-ccc-ddd-eee-fff
 ```
 
 ```sh
-npx -y speedybot-loco@1.0.0-beta.5 -f https://raw.githubusercontent.com/valgaze/speedybot-loco/deploy/samples/config.ts -t aaa-bbb-ccc-ddd-eee-fff
+npx -y speedybot-loco@1.0.0-beta.6 -f https://raw.githubusercontent.com/valgaze/speedybot-loco/deploy/samples/config.ts -t aaa-bbb-ccc-ddd-eee-fff
 ```
 
 ### Boot an agent using OpenAI's language models
 
 ```sh
-npx -y speedybot-loco@1.0.0-beta.5 -f https://github.com/valgaze/speedybot-loco/blob/deploy/samples/openai.ts -t aaa-bbb-ccc-ddd-eee-fff -s openai=sk-aaabbbcccdddeeefff
+npx -y speedybot-loco@1.0.0-beta.6 -f https://github.com/valgaze/speedybot-loco/blob/deploy/samples/openai.ts -t aaa-bbb-ccc-ddd-eee-fff -s openai=sk-aaabbbcccdddeeefff
 ```
 
 - GPT3 101: https://gpt3.valgaze.com
