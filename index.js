@@ -6,6 +6,7 @@ const path = require("path");
 const ts = require("typescript");
 const { Websocket } = require("./websockets");
 const { logoRoll } = require("speedybot-mini");
+require("cross-fetch/polyfill");
 
 // Parse command line arguments
 const argv = yargs
