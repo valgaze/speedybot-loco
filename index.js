@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+require("cross-fetch/polyfill");
 
 const fs = require("fs");
 const path = require("path");
