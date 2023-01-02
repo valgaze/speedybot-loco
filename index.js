@@ -143,5 +143,3 @@ secrets.forEach((secret) => {
 
 // launch websockets
 main(filePathOrUrl, token, stash);
-
-// speedycli -f my-cli/samples/openai.ts -t YmQ5ODg3YjQtYjhhMi00ZDMyLTgzZWQtMTJlYjg1MTQ5NDY5M2I5Y2Q3ZjUtZmIz_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f -s openai=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

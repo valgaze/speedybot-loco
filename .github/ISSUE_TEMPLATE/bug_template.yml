@@ -32,14 +32,6 @@ body:
       label: Attempted solution
       description: What have you tried so far to resolve the problem?
       placeholder: First I tried
-  - type: input
-    id: version
-    attributes:
-      label: Speedybot Version
-      description: What version of speedybot-mini are you using?
-      placeholder: 2.0.8
-    validations:
-      required: true
   - type: textarea
     id: remarks
     attributes:

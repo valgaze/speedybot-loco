@@ -3,7 +3,7 @@
   "version": "1.0.0-beta.4",
   "main": "index.js",
   "scripts": {
-    "stamp:beta": "npm version 1.0.0-beta.0",
+    "stamp:beta": "npm version 1.0.0-beta.5",
     "publish:beta": "npm publish --tag beta",
     "pb": "npm run publish:beta"
   },
@@ -21,7 +21,7 @@
   "description": "Experimental cli-- unstable, too many dependencies, etc-- dont use without goggles",
   "repository": {
     "type": "git",
-    "url": "https://github.com/valgaze/speedybot.git"
+    "url": "https://github.com/valgaze/speedybot-loco"
   },
   "keywords": [
     "bot",

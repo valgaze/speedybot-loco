@@ -33,11 +33,12 @@ CultureBot.contains(["ping", "pong"], ($bot, msg) => {
   }
 });
 
+CultureBot.exact("clear", ($bot) => $bot.clearScreen());
+
 // Special Handlers
 
 CultureBot.nlu(async ($bot, msg, api) => {
   try {
-    console.log(`#`, $bot.secrets);
     const modelConfig = {
       model: "text-davinci-003",
     };
